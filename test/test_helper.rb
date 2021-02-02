@@ -16,7 +16,6 @@ class ActiveSupport::TestCase
     !session[:user_id].nil?
   end
 
-  # テストユーザーとしてログインする
   def log_in_as(user)
     session[:user_id] = user.id
   end
